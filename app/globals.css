@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+
+height: 100vh;
+width: 100vw;
+background-image: url('../public/logo.jpg');
+
+background-repeat: no-repeat;
+background-size: 60vh;
+background-position: center;
+
+}
+
+input::placeholder{
+
+
+  color: white;
+}
+
+input{
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+ 
+}
+table, th, td {
+  border: 1px solid;
+  border-spacing: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+} 
+th{
+
+
+background-color: rgb(142, 141, 140);
+
+}
+td{
+
+background-color: darkviolet   ;
+
+
+
+}
