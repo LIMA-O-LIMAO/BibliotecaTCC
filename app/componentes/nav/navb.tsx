@@ -31,6 +31,6 @@ export default function Nav() {
         </nav>
 
 
-rm -f .git/index.lock
+
     )
 }

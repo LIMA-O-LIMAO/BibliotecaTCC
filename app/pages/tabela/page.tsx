@@ -1,5 +1,5 @@
 import Nav from "../../componentes/nav/navb"
-import Livro from "../../componentes/Tabelas/livro"
+import Aluno from "../../componentes/Tabelas/aluno"
 
 export default function Tela(){
 
@@ -10,7 +10,8 @@ export default function Tela(){
         <main className="h-screen w-screen">
 
 <Nav/>
-<Livro/>
+
+
             </main>
 
     )
