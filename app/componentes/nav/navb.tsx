@@ -6,7 +6,7 @@ export default function Nav() {
 
     return (
         <nav className="bg-red-700 flex flex-row h-20 items-center">
-            <Link href='./'>
+            <Link href='./pages'>
                 <img src="../logo.jpg" className="rounded-[50%] w-14 h-14 cursor-pointer ml-4" />
             </Link>
             <div className=" flex justify-center items-center w-full">
@@ -14,7 +14,7 @@ export default function Nav() {
                     <Link href="./pages/formularios">
                         <li className="hover:font-bold"> Alunos</li></Link>
                 
-                <Link href='./pages/tabela' > 
+                <Link href='./tabela' > 
                     <li>Tabelas</li>
                     </Link>   
 

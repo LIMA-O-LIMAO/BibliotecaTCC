@@ -10,7 +10,7 @@ export default function Tela(){
         <main className="h-screen w-screen">
 
 <Nav/>
-
+<Aluno/>
 
             </main>
 
