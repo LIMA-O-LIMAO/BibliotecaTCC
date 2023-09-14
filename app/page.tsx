@@ -1,51 +1,47 @@
 'use client'
 
-import Link from 'next/link'
 
 
-import { useState } from "react"
+
+import { useState, useEffect } from "react"
 import axios from 'axios';
-import { text } from 'stream/consumers';
+import { data } from "autoprefixer";
+
 
 export default function Home() {
 
 
 
-  const [setNome, Nome] = useState("");
-  const [setSenha, Senha] = useState("");
+  const [Nome,setNome] = useState("");
+  const [Senha,setSenha ] = useState("");
 
 
 
 
+const data={
 
-  const Clique = () => {
+  Usuario:Nome,
+  Senhas:Senha
 
-
-
-
-
-
-
-    //if(Nome=variavelBd && Senha=VariavelsBD){
+}
 
 
-
-    //return(
-
-    //<Link href="./pages/"/>
-    //)
-
-    //}
-
-    //senha=variaveldoBD
-    //nome tbm, logue
+const Clique = () => {
 
 
+  axios.post('http://localhost/php/API_POST/login.php', JSON.stringify(data), {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(function (response) {
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.error('Erro na solicitação POST:', error);
+      });
 
-
-
-
-  }
+}
 
   return (
     <main>
@@ -54,17 +50,33 @@ export default function Home() {
         <div className='flex justify-center items-center '>
 
           <div className='bg-zinc-800/90 flex justify-center flex-col w-80 h-[450px] items-center rounded-2xl gap-12'>
+
+
             <h1 className='text-3xl text-white '>Login</h1>
+            
+            
+            
             <div className='mt-2 flex items-center justify-center flex-col gap-5 '>
-              <input type="text" value='Nome_aluno' placeholder='joao' />
+              
+              <input type="text" 
+              value={Nome} 
+              placeholder='joao' 
+              onChange={(e)=>setNome(e.target.value)}
+              />
+              
 
-
-              <input type='text' placeholder='***' />
+              <input type='password'
+                placeholder='***'
+               value={Senha}
+              onChange={(e)=>setSenha(e.target.value) }
+              />
             </div>
-            <Link href="./pages/">
-              <button onClick={Clique} className='rounded-[0.8rem] bg-white h-10 w-48'>Logar</button>
-            </Link>
-          </div>
+                          <button 
+                          onClick={Clique} 
+                          className='rounded-[0.8rem] bg-white h-10 w-48'>
+                            Logar
+                          </button>
+                   </div>
 
         </div>
 
