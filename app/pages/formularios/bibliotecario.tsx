@@ -35,8 +35,8 @@ export default function Bibliotecarios() {
 
             <Nav />
 
-            <div className="flex justify-center items-center h-[30rem]">
-                <section className=" flex flex-col justify-center items-center bg-black h-[450px] rounded-md  w-[500px]">
+            <div className="flex justify-center items-center h-[50rem]">
+                <section className=" flex flex-col justify-center items-center bg-black/80 h-[600px] rounded-md  w-[500px]">
                   <h1 className="text-white text-5xl">Formulario</h1>
                   
                   <h2 className="text-white text-3xl">Bibliotecario</h2>
