@@ -1,4 +1,4 @@
-
+'use client'
 import { useState } from "react"
 import Nav from "../../componentes/nav/navb"
 import axios from "axios"
