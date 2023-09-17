@@ -22,9 +22,13 @@ export default function Bibliotecario(){
 return(
 
     <section className=" h-[91.5vh] w-full pt-20 ">
+  
     <table className="">
+ 
       <thead>
+
         <tr>
+          
           <th>Bibliotecario</th>
           <th>E-Mail</th>
           <th>CPF</th>
@@ -44,6 +48,7 @@ return(
         })}
       </tbody>
     </table>
+   
   </section>
 
 )

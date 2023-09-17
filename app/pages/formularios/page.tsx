@@ -40,7 +40,7 @@ export default function Formularios() {
 
 
 
-      {Valor == 1 && <Aluno />}
+      {Valor == 1 && <Aluno /> }
       {Valor == 2 && <Bibliotecarios />}
     </main>
   )
