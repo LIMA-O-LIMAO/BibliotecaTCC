@@ -2,7 +2,8 @@
 import { useState } from "react"
 import Nav from "../../componentes/nav/navb"
 import axios from "axios"
-import {  AtSign  } from "lucide-react"
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 export default function Bibliotecarios() {
 
     const [Nome, setNome] = useState("");
@@ -70,7 +71,12 @@ export default function Bibliotecarios() {
                             className=""
                         />
 <div className="flex justify-center">
-                        <button onClick={enviar} className="bg-white w-40 rounded-md h-8 hover:text-lg">Enviar</button>
+<Button className="Butao" variant="contained" endIcon={<SendIcon />}>
+  Cadastrar
+</Button>
+
+
+
                         </div>
                     </form>
 

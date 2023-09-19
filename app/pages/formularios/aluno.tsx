@@ -2,6 +2,8 @@
 import { useState } from "react"
 import Nav from "../../componentes/nav/navb"
 import axios from "axios"
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 export default function Formulario() {
 
   const [Nome, setNome] = useState("");
@@ -36,10 +38,6 @@ export default function Formulario() {
         onChange={(e) => setNome(e.target.value)}
         className="bg-slate-500"
       />
-
-      <button onClick={enviar}>Enviar</button>
-
-
 
 
 
